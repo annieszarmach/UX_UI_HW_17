@@ -15,10 +15,7 @@
 #navBar {
  display: flex;
  flex-direction: row;
- top: 53px;
-left: 1244px;
-width: 109px;
-height: 27px;
+ margin:0px 5%;
 }
 
 .logohead{
@@ -57,7 +54,10 @@ p{
 }
 
 #herogrid{
-    margin:0px 5%;
+    margin-top:0px;
+    margin-left:380px;
+    margin-right:400px;
+    margin-bottom:100px;
     display: grid;
     min-height:500px;
     height:70vh;
@@ -68,10 +68,12 @@ p{
 }
 
 .herogridarea{
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
     align-items:center;
     display:flex;
     position:relative;
+  }
+
+  #myphoto{
+      width: 533px;
+      height:666px
   }
