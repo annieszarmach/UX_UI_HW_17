@@ -53,7 +53,7 @@
    text-transform:uppercase;
    font-size:20px;
    font-weight:book;
-   padding:15px 32px;
+   padding:7px 18px;
 }
 
 h1{
@@ -105,7 +105,7 @@ p{
     margin-bottom:100px;
 }
 
-.projects{
+#projects{
     display:grid;
     grid-template-rows:auto;
     grid-template-columns:1fr 1fr;
@@ -116,40 +116,66 @@ p{
 }
 
 #pettrek{
+    display:grid;
     grid-area:pettrek;
     background-color:#ADB7B9;
-    padding:17vw
+    grid-column-start:1;
+    grid-column-end:2;
+    height:100vh;
 }
 
 #ptphoto{
+    display:grid;
     grid-area:ptphoto;
     background-image: url("../images/home/pettrek.png");
     height:100vh;
+    grid-column-start:2;
+    grid-column-end:3;
+    background-repeat:no-repeat;
 }
 
 #whirl{
+    display:grid;
     grid-area: whirl;
     background-color:#F3E7DB;
-    padding:17vw;
-}
 
-#wphoto{
-    grid-area:wphoto;
-    background-image: url("../images/home/whirl.png");
+    grid-column-start:1;
+    grid-column-end:2;
     height:100vh;
 }
 
+#wphoto{
+    display:grid;
+    grid-area:wphoto;
+    background-image: url("../images/home/whirl.png");
+    height:100vh;
+    grid-column-start:2;
+    grid-column-end:3;
+    background-repeat:no-repeat;
+}
+
 #swag{
+    display:grid;
     grid-area:swag;
     background-color:#ECC579;
-    padding:17vw;
+    grid-column-start:1;
+    grid-column-end:2;
+    height:100vh;
 
 }
 
 #sphoto{
+    display:grid;
     grid-area:sphoto;
     background-image: url("../images/home/swag.png");
     height:100vh;
+    grid-column-start:2;
+    grid-column-end:3;
+    background-repeat:no-repeat;
+}
+
+.text{
+    margin:17wh;
 }
 
 .footerlinks{
@@ -160,7 +186,7 @@ p{
     letter-spacing: 2px;
     text-transform:uppercase;
     list-style-type:none;
-    display:flex;
+    display:grid;
     color:#95512B;
     align-items: flex-end;
     justify-content:center;
@@ -169,23 +195,21 @@ p{
 .footerlogo{
     width: 150px;
     height: 150px;
+    display:grid;
 }
 
 .footer-logo{
     width: 300px;
-    display:flex;
-    align-items:flex-end;
-    justify-content: flex-start;
+    display:grid;
 }
 
 .footeremail{
-    display:flex;
-    align-items:flex-end;
-    justify-content:flex-end;
+    display:grid;
     color:#95512B;
 }
 
 .footer{
+    display:grid;
     background-color: #F3E7DB;
     margin-top:100px;
 }
