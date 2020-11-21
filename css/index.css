@@ -77,6 +77,7 @@ h2{
     font:helvetica;
     float:left;
     margin-left:100px;
+    text-align:left;
 }
 
 .heroheadline{
@@ -152,11 +153,30 @@ p{
     list-style-type:none;
     display:flex;
     color:#95512B;
+    align-items: flex-end;
+    justify-content:center;
 }
 
 .footerlogo{
     width: 150px;
     height: 150px;
-    margin-top: 10px;
-    display:inline;
+}
+
+.footer-logo{
+    width: 300px;
+    display:flex;
+    align-items:flex-end;
+    justify-content: flex-start;
+}
+
+.footeremail{
+    display:flex;
+    align-items:flex-end;
+    justify-content:flex-end;
+    color:#95512B;
+}
+
+.footer{
+    background-color: #F3E7DB;
+    margin-top:100px;
 }
