@@ -107,8 +107,8 @@ p{
 
 .projects{
     display:grid;
-    grid-template-rows:500px 500px 500px;
-    grid-template-columns:1000px 1000px;
+    grid-template-rows:auto;
+    grid-template-columns:1fr 1fr;
     grid-template-areas:
     'pettrek ptphoto'
     'whirl wphoto'
@@ -117,30 +117,39 @@ p{
 
 #pettrek{
     grid-area:pettrek;
+    background-color:#ADB7B9;
+    padding:17vw
 }
 
 #ptphoto{
     grid-area:ptphoto;
-    background-image: url(../images/home/pettrek.png);
+    background-image: url("../images/home/pettrek.png");
+    height:100vh;
 }
 
 #whirl{
     grid-area: whirl;
+    background-color:#F3E7DB;
+    padding:17vw;
 }
 
 #wphoto{
     grid-area:wphoto;
-    background-image: url(../images/home/whirl.png)
+    background-image: url("../images/home/whirl.png");
+    height:100vh;
 }
 
 #swag{
     grid-area:swag;
+    background-color:#ECC579;
+    padding:17vw;
 
 }
 
 #sphoto{
     grid-area:sphoto;
-    background-image: url(../images/home/swag.png)
+    background-image: url("../images/home/swag.png");
+    height:100vh;
 }
 
 .footerlinks{
