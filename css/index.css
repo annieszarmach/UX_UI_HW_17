@@ -65,6 +65,14 @@ font-weight:bold;
 font-size:80px;
 }
 
+h2{
+    font-family:avenir;
+    text-align:left;
+    letter-spacing:8.4px;
+    text-transform:uppercase;
+    font-size:40px;
+}
+
 .herotext{
     font:helvetica;
     float:left;
@@ -94,4 +102,61 @@ p{
     margin-left:400px;
     margin-top: 200px;
     margin-bottom:100px;
+}
+
+.projects{
+    display:grid;
+    grid-template-rows:500px 500px 500px;
+    grid-template-columns:1000px 1000px;
+    grid-template-areas:
+    'pettrek ptphoto'
+    'whirl wphoto'
+    'swag sphoto'
+}
+
+#pettrek{
+    grid-area:pettrek;
+}
+
+#ptphoto{
+    grid-area:ptphoto;
+    background-image: url(../images/home/pettrek.png);
+}
+
+#whirl{
+    grid-area: whirl;
+}
+
+#wphoto{
+    grid-area:wphoto;
+    background-image: url(../images/home/whirl.png)
+}
+
+#swag{
+    grid-area:swag;
+
+}
+
+#sphoto{
+    grid-area:sphoto;
+    background-image: url(../images/home/swag.png)
+}
+
+.footerlinks{
+    font-family: avenir;
+    font-weight:medium;
+    font-size:20px;
+    text-align: left;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    list-style-type:none;
+    display:flex;
+    color:#95512B;
+}
+
+.footerlogo{
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    display:inline;
 }
