@@ -188,8 +188,8 @@ p{
     list-style-type:none;
     display:grid;
     color:#95512B;
-    align-items: flex-end;
-    justify-content:center;
+    grid-area:footerlinks;
+    padding:30px;
 }
 
 .footerlogo{
@@ -201,15 +201,44 @@ p{
 .footer-logo{
     width: 300px;
     display:grid;
+    grid-area:footerlogo;
+    padding:50px;
 }
 
 .footeremail{
     display:grid;
     color:#95512B;
+    grid-area:footeremail;
+    padding:50px;
 }
 
 .footer{
     display:grid;
     background-color: #F3E7DB;
     margin-top:100px;
+    grid-template-rows:auto;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "footerlogo footerlinks footeremail icons";
+
+}
+
+.icons{
+    display:grid;
+    grid-area:icons;
+}
+
+#facebook{
+    background-image:url("../images/facebook.png");
+    background-repeat:no-repeat;
+}
+
+#linkedin{
+    background-image:url("../images/linkedin.png");
+    background-repeat:no-repeat;
+}
+
+#instagram{
+    background-image:url("../images/instagram.png");
+    background-repeat:no-repeat;
 }
